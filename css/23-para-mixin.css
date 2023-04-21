@@ -1,0 +1,29 @@
+ul,
+li,
+body,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+#nav {
+  overflow: hidden;
+  list-style: none;
+  border: 1px dashed red;
+}
+#nav li {
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.banner {
+  overflow: hidden;
+  list-style: none;
+  border: 5px dashed blue;
+}
+.banner li {
+  float: left;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,8 @@
+.wrap, .wrap .box {
+  border: 1px solid pink;
+  padding: 10px;
+}
+.wrap .box {
+  background: powderblue;
+  font-style: 30px;
+}

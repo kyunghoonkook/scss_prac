@@ -1,0 +1,10 @@
+#container {
+  background: #ddd;
+}
+
+.section-lime {
+  border-top-width: 2px;
+  border-top-color: lime;
+  border-top-style: solid;
+  padding-top: 30px;
+}

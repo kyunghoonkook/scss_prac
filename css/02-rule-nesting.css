@@ -1,0 +1,16 @@
+section {
+  width: 800px;
+  background-color: antiquewhite;
+}
+section > .list {
+  padding: 20px;
+  overflow: hidden;
+}
+section > .list > li {
+  float: left;
+  margin: 10px;
+}
+section > .list > li > a {
+  color: hotpink;
+  text-decoration: none;
+}

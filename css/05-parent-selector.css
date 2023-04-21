@@ -1,0 +1,20 @@
+nav {
+  background-color: khaki;
+  height: 100px;
+}
+nav #nav {
+  float: right;
+}
+nav #nav li {
+  float: left;
+  margin: 0 40px;
+}
+nav #nav li:last-child {
+  margin-right: 0;
+}
+nav #nav li a {
+  color: pink;
+}
+nav #nav li a:hover {
+  color: deepskyblue;
+}

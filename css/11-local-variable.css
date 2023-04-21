@@ -1,0 +1,10 @@
+header {
+  background: #999;
+  width: 1000px;
+  height: 300px;
+}
+
+section {
+  height: 150px;
+  background: pink;
+}

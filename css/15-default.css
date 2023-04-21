@@ -1,0 +1,8 @@
+@charset "UTF-8";
+#main::after {
+  content: "안녕하세요~~~";
+}
+
+footer::before {
+  content: "기본값 사용하기";
+}

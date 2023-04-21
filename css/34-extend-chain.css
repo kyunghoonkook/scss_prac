@@ -1,0 +1,13 @@
+.box1, .box2, .box3 {
+  color: pink;
+  background-color: purple;
+}
+
+.box2, .box3 {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.box3 {
+  font-style: italic;
+}

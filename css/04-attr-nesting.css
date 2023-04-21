@@ -1,0 +1,17 @@
+@charset "UTF-8";
+h1 {
+  background: khaki;
+  font: 20px/60px "돋움";
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.wrap .box {
+  font-family: "궁서";
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: 10px;
+  margin-left: 30px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+}

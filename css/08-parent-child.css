@@ -1,0 +1,12 @@
+.notice ul li {
+  list-style: none;
+}
+.notice ul li a {
+  color: pink;
+}
+.notice ul li a:hover {
+  color: green;
+}
+#container .notice ul li a {
+  color: skyblue;
+}

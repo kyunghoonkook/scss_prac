@@ -1,0 +1,15 @@
+header {
+  border-top: 3px solid hotpink;
+  font-size: 15px;
+}
+header a {
+  color: hotpink;
+}
+
+#container h2 {
+  font-size: 20px;
+}
+#container div {
+  font-size: 15px;
+  color: #999;
+}

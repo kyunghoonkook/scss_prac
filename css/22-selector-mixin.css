@@ -1,0 +1,25 @@
+h1 {
+  color: green;
+  font-size: 20px;
+  font-weight: bolder;
+}
+h1 span {
+  text-decoration: underline;
+  font-style: italic;
+}
+h1:hover {
+  background: pink;
+}
+
+div {
+  color: green;
+  font-size: 20px;
+  font-weight: bolder;
+}
+div span {
+  text-decoration: underline;
+  font-style: italic;
+}
+div:hover {
+  background: pink;
+}

@@ -1,0 +1,14 @@
+.box, .box-img, .box-btn {
+  border: 2px solid black;
+  color: tomato;
+  padding: 30px;
+  margin: 15px;
+}
+
+.box-btn {
+  background: skyblue;
+}
+
+.box-img {
+  background: green;
+}

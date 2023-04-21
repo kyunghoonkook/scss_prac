@@ -1,0 +1,11 @@
+h1 {
+  width: 800px;
+  height: 100px;
+  background: url(../images/icon_franchise.png);
+}
+
+div {
+  width: 600px;
+  height: 600px;
+  background: url(../images/main_PC_1920x440_20201006040046969.jpg) center no-repeat, url(../images/logo_w.png) bottom no-repeat, url(../images/icon_utill_global.png) top no-repeat;
+}

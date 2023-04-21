@@ -1,0 +1,20 @@
+h1 {
+  background: pink;
+  font-size: 20px;
+  color: skyblue;
+  text-decoration: underline;
+}
+
+span {
+  background: green;
+  font-size: 20px;
+  color: skyblue;
+  text-decoration: underline;
+}
+
+p {
+  background: #ddd;
+  font-size: 20px;
+  color: skyblue;
+  text-decoration: underline;
+}

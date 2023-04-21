@@ -1,0 +1,5 @@
+@charset "UTF-8";
+#main::after {
+  content: "날씨가 더워";
+  color: #999;
+}

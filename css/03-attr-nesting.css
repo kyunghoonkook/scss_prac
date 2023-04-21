@@ -1,0 +1,9 @@
+@charset "UTF-8";
+h1 {
+  color: pink;
+  background-color: indigo;
+  font-family: "돋움";
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 30px;
+}

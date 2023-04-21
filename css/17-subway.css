@@ -1,0 +1,144 @@
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+ol,
+dl,
+dt,
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  border-top: 5px solid #009223;
+  padding-top: 30px;
+  text-align: center;
+}
+header .gnb {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+header .gnb li {
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  line-height: 30px;
+}
+header .gnb li:nth-child(2) {
+  padding-left: 10px;
+}
+header .gnb li:nth-child(2)::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: #666;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+header .gnb li a {
+  color: #666;
+  font-size: 13px;
+}
+header .gnb li:last-child a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/icon_utill_global.png);
+}
+header #nav {
+  padding: 30px 0 10px;
+}
+header #nav > li {
+  display: inline-block;
+  position: relative;
+}
+header #nav > li > a {
+  display: block;
+  color: #292929;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 10px 55px;
+}
+header #nav > li > a:hover {
+  color: #009223;
+}
+header #nav > li .sub {
+  display: none;
+  position: absolute;
+  padding: 30px 0;
+  line-height: 2;
+}
+header #nav > li .sub li a {
+  color: #666;
+  font-weight: bolder;
+}
+header #nav > li .sub li a:hover {
+  color: #009223;
+  text-decoration: underline;
+}
+header.on::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 250px;
+  background: #eee;
+  position: absolute;
+  top: 167px;
+}
+
+#mainBanner {
+  height: 480px;
+  background: url(../images/main_PC_1920x440_20201006040046969.jpg) center;
+}
+
+#container .quickLink {
+  position: absolute;
+  right: 0;
+  top: -40px;
+}
+#container .quickLink div {
+  width: 300px;
+  float: left;
+  background-repeat: no-repeat;
+}
+#container .quickLink div a {
+  display: block;
+  line-height: 80px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: #292929;
+}
+#container .quickLink div:first-child {
+  background-color: #ffce32;
+  background-image: url(../images/icon_map.png);
+  background-position: 70px 25px;
+}
+#container .quickLink div:last-child {
+  background-color: #009223;
+  background-image: url(../images/icon_franchise.png);
+  background-position: 40px 25px;
+}
+#container .quickLink div:last-child a {
+  color: white;
+}

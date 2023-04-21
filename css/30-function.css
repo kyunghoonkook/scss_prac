@@ -1,0 +1,17 @@
+.boxWrap {
+  width: 1200px;
+}
+.boxWrap div {
+  height: 200px;
+  margin: 10px;
+  background: skyblue;
+}
+.boxWrap div.box1 {
+  width: 1200px;
+}
+.boxWrap div.box2 {
+  width: 600px;
+}
+.boxWrap div.box3 {
+  width: 300px;
+}

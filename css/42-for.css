@@ -1,0 +1,38 @@
+.throughWrap div {
+  background: pink;
+  height: 20px;
+  margin: 10px;
+}
+.throughWrap div:nth-child(1) {
+  width: 50px;
+}
+.throughWrap div:nth-child(2) {
+  width: 100px;
+}
+.throughWrap div:nth-child(3) {
+  width: 150px;
+}
+.throughWrap div:nth-child(4) {
+  width: 200px;
+}
+.throughWrap div:nth-child(5) {
+  width: 250px;
+}
+
+.toWrap div {
+  background: skyblue;
+  width: 500px;
+  margin: 10px;
+}
+.toWrap div:nth-child(1) {
+  height: 20px;
+}
+.toWrap div:nth-child(2) {
+  height: 40px;
+}
+.toWrap div:nth-child(3) {
+  height: 60px;
+}
+.toWrap div:nth-child(4) {
+  height: 80px;
+}

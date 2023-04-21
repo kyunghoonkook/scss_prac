@@ -1,0 +1,13 @@
+h1 {
+  color: red;
+  border: 1px solid blue;
+  margin: 10px 0;
+  padding: 10px 10px;
+}
+
+button {
+  color: green;
+  border: 1px solid #ddd;
+  margin: 30px 0;
+  padding: 30px 10px;
+}

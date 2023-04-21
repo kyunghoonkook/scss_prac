@@ -1,0 +1,22 @@
+header {
+  background-color: #eee;
+}
+header .logo {
+  position: absolute;
+}
+@media screen and (max-width: 767px) {
+  header .logo {
+    position: relative;
+  }
+}
+
+#container {
+  background: green;
+  width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  #container {
+    position: relative;
+  }
+}

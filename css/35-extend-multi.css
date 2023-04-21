@@ -1,0 +1,9 @@
+.box1, .box3 {
+  color: rebeccapurple;
+  text-decoration: underline;
+}
+
+.box2, .box3 {
+  background-color: slategray;
+  font-size: 50px;
+}
