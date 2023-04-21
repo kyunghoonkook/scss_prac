@@ -1,0 +1,168 @@
+//메인컬러
+//서브컬러
+//메인글자색
+//서브글자색
+$메인컬러: #009223;
+$노랑컬러: #ffce32;
+$메인글자색: #292929;
+$서브글자색: #666;
+
+//기본레이아웃
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+ol,
+dl,
+dt,
+* {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.center {
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+//header
+header {
+    border-top: 5px solid $메인컬러;
+    padding-top: 30px;
+    text-align: center;
+
+    .gnb {
+        position: absolute;
+        right: 0;
+        top: 10px;
+
+        li {
+            float: left;
+            position: relative;
+            margin-left: 10px;
+            line-height: 30px;
+
+            &:nth-child(2) {
+                padding-left: 10px;
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 2px;
+                    height: 2px;
+                    background: $서브글자색;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                }
+            }
+            a {
+                color: $서브글자색;
+                font-size: 13px;
+            }
+            &:last-child {
+                a {
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    background: url(../images/icon_utill_global.png);
+                }
+            }
+        }
+    }
+    #nav {
+        padding: 30px 0 10px;
+        > li {
+            display: inline-block;
+            position: relative;
+            > a {
+                display: block;
+                color: $메인글자색;
+                font-size: 18px;
+                font-weight: bolder;
+                padding: 10px 55px;
+                &:hover {
+                    color: $메인컬러;
+                }
+            }
+            .sub {
+                display: none;
+                position: absolute;
+                padding: 30px 0;
+                line-height: 2;
+                li {
+                    a {
+                        color: $서브글자색;
+                        font-weight: bolder;
+                        &:hover {
+                            color: $메인컬러;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.on::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 250px;
+        background: #eee;
+        position: absolute;
+        top: 167px;
+    }
+}
+
+#mainBanner {
+    height: 480px;
+    background: url(../images/main_PC_1920x440_20201006040046969.jpg) center;
+}
+
+#container {
+    .quickLink {
+        position: absolute;
+        right: 0;
+        top: -40px;
+        div {
+            width: 300px;
+            float: left;
+            background-repeat: no-repeat;
+            a {
+                display: block;
+                line-height: 80px;
+                font-size: 22px;
+                font-weight: bold;
+                text-align: center;
+                color: $메인글자색;
+            }
+            &:first-child {
+                // background-color: $노랑컬러;
+                // background-image: url(../images/icon_map.png) ;
+                // background-position:80px  30px;
+                background: {
+                    color: $노랑컬러;
+                    image: url(../images/icon_map.png);
+                    position: 70px 25px;
+                }
+            }
+            &:last-child {
+                background-color: $메인컬러;
+                background-image: url(../images/icon_franchise.png);
+                background-position: 40px 25px;
+                a {
+                    color: white;
+                }
+            }
+            
+        }
+    }
+}

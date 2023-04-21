@@ -1,0 +1,25 @@
+@import 'common';
+
+.quickMenu{
+    overflow: hidden;
+
+    li{
+        float: left;
+        width: 70px;
+        height: 70px;
+
+        a{
+            display: block;
+            height: 100%;
+            background-image: url(../images/icon_quickmenu.png);
+        }
+
+        @for $i from 1 through 4{
+            &:nth-child(#{$i}){
+                a{
+                    background-position: -70px * $i + 70px 0;
+                }
+            }
+        }
+    }
+}

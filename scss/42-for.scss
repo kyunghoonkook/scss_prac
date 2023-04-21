@@ -1,0 +1,31 @@
+//.through의 너비값이
+//50,100,150,200,250이 되도록
+.throughWrap {
+    div {
+        background: pink;
+        height: 20px;
+        margin: 10px;
+    }
+
+    @for $i from 1 through 5 {
+        div:nth-child(#{$i}) {
+            width: 50px*$i;
+        }
+    }
+}
+
+//.to 높이
+//20px 40 60 80 100
+.toWrap {
+    div {
+        background: skyblue;
+        width: 500px;
+        margin: 10px;
+    }
+
+    @for $i from 1 to 5 {
+        div:nth-child(#{$i}) {
+            height: 20px*$i;
+        }
+    }
+}

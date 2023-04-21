@@ -1,0 +1,24 @@
+//변수 선언하기
+$메인컬러:hotpink;
+$본문색상:#999;
+$제목:20px;
+$본문글자:15px;
+header {
+    border: {
+        top: 3px solid $메인컬러;
+    }
+    font-size: $본문글자;
+    a {
+        color: $메인컬러;
+    }
+}
+
+#container {
+    h2 {
+        font-size: $제목;
+    }
+    div {
+        font-size: $본문글자;
+        color: $본문색상;
+    }
+}

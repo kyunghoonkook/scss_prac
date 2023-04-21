@@ -1,0 +1,21 @@
+//css에서는 사용이 되지 않으나, 공통사항으로 만들어 둘때
+//테두리, 패딩, 둥글기, 마진
+%btn {
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.btn-danger {
+  @extend %btn;
+  background: thistle;
+}
+.btn-error {
+  @extend %btn;
+  background: seagreen;
+}
+.btn-info {
+  @extend %btn;
+  background: yellowgreen;
+}

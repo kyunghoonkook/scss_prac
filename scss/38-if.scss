@@ -1,0 +1,8 @@
+//너비를 저장할 변수
+$너비:500px;
+//div 배경 너비가 600px보다 크면 하늘색
+//작으면 핑크색
+div{
+    height: 100px;
+    background-color:if($너비>600,"skyblue","pink");
+}

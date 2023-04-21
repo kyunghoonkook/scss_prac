@@ -1,0 +1,18 @@
+//h1 span p 글자크기, 밑줄, 글자색을 공통으로
+@mixin myText{
+    font-size: 20px;
+    color: skyblue;
+    text-decoration: underline;
+}
+h1{
+    background: pink;
+    @include myText();
+}
+span{
+    background: green;
+    @include myText();
+}
+p{
+    background: #ddd;
+    @include myText();
+}

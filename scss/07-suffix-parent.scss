@@ -1,0 +1,22 @@
+.wrap{
+    background: skyblue;
+    .box{
+        &-small{
+            font-size: 20px;
+            background: green;
+        }
+        &-medium{
+            font-size: 40px;
+            text-decoration: underline;
+        }
+        &-large{
+            // font-size: 100px;
+            // font-style: italic;
+            font: {
+                size: 100px;
+                style:italic;
+                weight:bolder;
+            }
+        }
+    }
+}

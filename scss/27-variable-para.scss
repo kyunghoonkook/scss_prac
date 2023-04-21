@@ -1,0 +1,20 @@
+//div width height 배경 그림 3개
+//h1 배경 그림 1개
+
+@mixin bg($너비, $높이, $bg...) {
+  width: $너비;
+  height: $높이;
+  background: $bg;
+}
+h1 {
+  @include bg(800px, 100px, url(../images/icon_franchise.png));
+}
+div {
+  @include bg(
+    600px,
+    600px,
+    url(../images/main_PC_1920x440_20201006040046969.jpg) center no-repeat,
+    url(../images/logo_w.png) bottom no-repeat,
+    url(../images/icon_utill_global.png) top no-repeat
+  );
+}

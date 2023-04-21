@@ -1,0 +1,17 @@
+//.wrap 테두리, 패딩
+//.wrap .box 테두리 패딩(부모인.wrap) 배경색, 글자크기
+
+
+
+
+.wrap{
+    $부모:&;
+    
+    border: 1px solid pink;
+    padding: 10px;
+    .box{
+        background: powderblue;
+        font-style: 30px;
+        @extend #{$부모};
+    }
+}

@@ -1,0 +1,33 @@
+//너비 높이 left top position 정보를 입력 받아
+//position absolute 이거나 fixed면 입력받은 값을 적용하고, 그렇지 않으면 적용하지 않음
+//값 입력시 단위가 생략되었을 경우 px을 붙여주고 미생략시 그대로 적용
+@mixin boxPosition($w, $h, $left, $top, $p:absolute) {
+    @if($p==absolute or $p==fixed) {
+        width:if(unitless($w), #{$w}px, $w);
+        height: if(unitless($h), #{$h}px, $h);
+        left: if(unitless($left), #{$left}px, $left);
+        top: if(unitless($top), #{$top}px, $top);
+    }
+
+    @else {
+        height: if(unitless($left),#{$left}px,$left);
+    }
+    position: $p;
+}
+
+div {
+    background-color: pink;
+    margin: 10px;
+}
+
+.box1 {
+    @include boxPosition(100px, 50px, 200px, 200px);
+}
+
+.box2 {
+    @include boxPosition(600, 100, 500px, 300, fixed)
+}
+
+.box3 {
+    @include boxPosition(800, 200, 10, 400, relative)
+}

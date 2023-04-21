@@ -1,0 +1,17 @@
+$content:"hi~~~~";
+$content:"안녕하세요~~~";
+$content:"scss에 오신걸 환영합니다" !default;
+// $content:"111111";
+
+#main::after{
+    content: $content;
+}
+
+
+$content2:null;
+$content2:"기본값 사용하기" !default;
+// $content2:"2222222";
+
+footer::before{
+    content: $content2;
+}

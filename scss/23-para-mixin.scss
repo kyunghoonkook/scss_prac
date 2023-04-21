@@ -1,0 +1,38 @@
+ul,
+li,
+body,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+//테두리 두께, 색상을 매개변수로 받아 주기
+@mixin dash-line($테두리너비, $테두리색상) {
+  overflow: hidden;
+  list-style: none;
+  border: $테두리너비 dashed $테두리색상;
+}
+
+//마진
+@mixin margin-list($left,$bottom) {
+  float: left;
+  margin: {
+    left: $left;
+    bottom: $bottom;
+  }
+}
+
+#nav {
+  @include dash-line(1px, red);
+
+  li {
+    @include margin-list(20px, 30px);
+  }
+}
+.banner {
+  @include dash-line(5px, blue);
+
+  li {
+    @include margin-list(50px, 50px);
+  }
+}

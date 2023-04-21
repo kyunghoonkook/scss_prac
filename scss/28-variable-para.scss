@@ -1,0 +1,26 @@
+//글씨체, 크기, 두께, 스타일
+@mixin my-font(
+  $family: sans-serif,
+  $size: 16px,
+  $weight: normal,
+  $style: normal
+) {
+  font: {
+    family: $family;
+    size: $size;
+    weight: $weight;
+    style: $style;
+  }
+}
+
+//h1 궁서, 30px, 400. italic
+h1 {
+  $font-value: "궁서", 30px, 400, italic;
+  @include my-font($font-value...);
+}
+//div 글자크기 10, italic
+div{
+    $font-value:(size:10px,style:italic);
+    @include my-font($font-value...);
+}
+//address 두께 bolder

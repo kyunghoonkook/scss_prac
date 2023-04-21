@@ -1,0 +1,26 @@
+$화면크기: 1200px;
+//box의 너비를 계산할 함수 만들기
+@function box-size($count: 1) {
+  @return $화면크기/$count;
+}
+.boxWrap {
+  width: $화면크기;
+
+  div {
+    height: 200px;
+    margin: 10px;
+    background: skyblue;
+    //box1 너비 1200
+    &.box1{
+        width: box-size();
+    }
+    //box2 너비 화면크기 반
+    &.box2{
+        width: box-size(2);
+    }
+    //box3 너비 화면크기의 1/4
+    &.box3{
+        width: box-size(4);
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.nav {
+  width: 600px;
+  background: #ddd; }
+  .nav li {
+    float: left;
+    color: white;
+    background: green; }
+    .nav li:last-child {
+      background: yellow; }

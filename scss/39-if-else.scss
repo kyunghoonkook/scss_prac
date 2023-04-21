@@ -1,0 +1,16 @@
+//너비를 저장할 변수
+$너비:1200px;
+//div의 변수너비의 값이 1200보다 크면
+//width 너비의 값을 주고, 배경은 핑크
+//작으면 width100%, 배경은 초록
+div{
+    height: 100px;
+    @if($너비>=1200){
+        width:$너비;
+        background: pink;
+    }
+    @else{
+        width: 100%;
+        background: green;
+    }
+}

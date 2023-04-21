@@ -1,0 +1,39 @@
+//wrap position relative top,left,right,bottom
+//width height background
+
+//fixed position top,right
+//width height background
+
+//.absolute position bottom, left
+//absolute position
+
+//box position absoulte top,left
+//width, height, background
+@mixin pos($p:absolute,$top:null,$right:null,$bottom:null,$left:null) {
+    position: $p;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+
+@mixin size($w:null,$h:null,$bg:null){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+.wrap{
+    @include size(600px,400px,skyblue);
+    @include pos($p:relative);
+    margin:0 auto;
+    .fixed{
+        @include size($w:150px,$bg:pink);
+        @include pos($p:fixed,$top:30px,$right:20px);
+    }
+
+    .absolute{
+        @include size($h:50px,$bg:green);
+        @include pos($bottom:20px,$left:50px);
+    }
+}

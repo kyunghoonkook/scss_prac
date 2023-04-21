@@ -1,0 +1,16 @@
+@use "sass:color";
+@use "sass:math";
+
+$메인컬러:green;
+.box1{
+    color:green;
+    background-color: color.mix(red,blue);
+}
+
+.box2{
+    border:5px solid color.scale($메인컬러,$lightness:50%)
+}
+.box3{
+    width: math.percentage(0.5);
+    border: 1px solid black;
+}

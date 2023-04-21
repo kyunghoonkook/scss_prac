@@ -1,0 +1,27 @@
+@import 'common';
+
+.event {
+    li {
+        width: 454px;
+        height: 290px;
+
+        a {
+            display: block;
+            height: 100%;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            text-align: center;
+            line-height: 290px;
+            color: teal;
+            font-size: 50px;
+        }
+
+        @for $i from 1 through 5 {
+            &:nth-child(#{$i}) {
+                a {
+                    background-image: url(../images/img0#{$i}.png);
+                }
+            }
+        }
+    }
+}

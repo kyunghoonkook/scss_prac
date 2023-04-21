@@ -1,0 +1,13 @@
+$content:"안녕하세요";
+$content:"날씨가 더워";
+$글자색:#999;
+#main::after {
+    content: $content;
+    color: $글자색;
+    font-size: 30px;
+}
+
+$content:"ㅜㅜ";
+footer::before {
+    content: $content;
+}

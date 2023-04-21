@@ -1,0 +1,13 @@
+//테두리두께, 테두리색을 가지는mixin
+@mixin dash-line($width:2px,$borderColor:black) {
+    border: $width dashed $borderColor;
+}
+h1{
+    @include dash-line();
+}
+p{
+    @include dash-line(5px,green);
+}
+div{
+    @include dash-line();
+}

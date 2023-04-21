@@ -1,0 +1,28 @@
+//h1 글자크기, 글씨체, 두께, 스타일, 줄간격
+h1{
+    background: khaki;
+    font:20px/60px "돋움"{
+        weight:bolder;
+        style:italic;
+    };
+}
+//.wrap>.box에는 글씨체, 글자크기, 굵기,margin top, margin-left,padding-right,padding-bottom
+
+.wrap{
+    
+    .box{
+        font: {
+            family:"궁서";
+            size:20px;
+            weight:bolder;
+        }
+        margin: {
+            top: 10px;
+            left: 30px;
+        }
+        padding: {
+            right: 50px;
+            bottom: 30px;
+        }
+    }
+}

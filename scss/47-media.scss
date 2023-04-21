@@ -1,0 +1,87 @@
+@import "common";
+
+$screen-mobile: 767px;
+
+@mixin respond($media) {
+  @media screen and (max-width: $media) {
+    @content;
+  }
+}
+
+.center {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #eee;
+  position: relative;
+
+  @include respond($screen-mobile) {
+    width: 100%;
+  }
+}
+
+header {
+  border-bottom: 2px solid hotpink;
+  min-height: 80px;
+  .logo {
+    text-align: center;
+    padding-top: 20px;
+
+    @include respond($screen-mobile) {
+      float: left;
+      margin-left: 20px;
+    }
+  }
+  .gnb {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
+#container {
+  .mainBanner {
+    font-size: 100px;
+    background: green;
+    height: 400px;
+    color: white;
+
+    @include respond($screen-mobile) {
+      font-size: 30px;
+      height: 21.0526vw;
+    }
+  }
+  .contents {
+    padding: 50px 0;
+    div {
+      float: left;
+      width: 350px;
+      height: 200px;
+      background-color: royalblue;
+
+      @include respond($screen-mobile) {
+        width: 90%;
+        margin: 10px 5% !important;
+      }
+
+      &.box2 {
+        margin: 0 75px;
+      }
+    }
+  }
+}
+
+footer {
+  text-align: center;
+
+  @include respond($screen-mobile) {
+    .footLogo {
+      float: left;
+    }
+    address{
+        display: none;
+    }
+  }
+}

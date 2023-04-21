@@ -1,0 +1,19 @@
+.boxWrap{
+    @at-root #container .title{
+        font-size:30px;
+    }
+    .list{
+        overflow: hidden;
+        li{
+            float:left;
+            margin: {
+                left:20px;
+                right:30px;
+            }
+        }
+    }
+
+    @at-root #container .box{
+        background:pink;
+    }
+}

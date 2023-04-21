@@ -1,0 +1,15 @@
+// h1 글자색,글씨체,두께,스타일,사이즈,배경
+h1{
+    color: pink;
+    background-color: indigo;
+    // font-family: "돋움";
+    // font-weight: bolder;
+    // font-style: normal;
+    // font-size: 30px;
+    font: {
+        family:"돋움";
+        weight:bolder;
+        style:normal;
+        size:30px;
+    }
+}

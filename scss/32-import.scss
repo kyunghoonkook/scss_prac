@@ -1,0 +1,15 @@
+@import 'common';
+
+header{
+    width: 1200px;
+    margin: 0 auto;
+    .logo{
+        text-align: center;
+    }
+    .gnb{
+        li{
+            float: left;
+            margin: 0 30px;
+        }
+    }
+}

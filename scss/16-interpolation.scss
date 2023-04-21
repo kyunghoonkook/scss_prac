@@ -1,0 +1,23 @@
+//기본변수 정의와 사용법
+$배경색:#ddd;
+#container{
+    background:$배경색;
+}
+
+//문자열보간
+$color:lime;
+$position:top;
+
+.section-#{$color}{
+    //border-top:2px solid lime
+    //배경색
+    //padding-top:30px;
+    border-#{$position}-width:2px;
+    border-#{$position}-color:$color;
+    border-#{$position}-style:solid;
+    padding-#{$position}:30px;
+}
+
+// .section-lime{
+
+// }

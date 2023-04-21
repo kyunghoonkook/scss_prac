@@ -1,0 +1,14 @@
+//글자색, 테두리색, 마진 == 패딩
+@mixin myButton($글자색, $테두리색,$좌우여백) {
+    color:$글자색;
+    border: 1px solid $테두리색;
+    margin: $좌우여백 0;
+    padding: $좌우여백 10px;
+}
+
+h1{
+    @include myButton(red, blue, 10px)
+}
+button{
+    @include myButton(green, #ddd, 30px)
+}

@@ -1,0 +1,26 @@
+//767px 이하 해상도
+@mixin mobile-screen {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+header {
+  background-color: #eee;
+  .logo {
+    position: absolute;
+
+    @include mobile-screen {
+      position: relative;
+    }
+  }
+}
+#container {
+  background: green;
+  width: 1200px;
+  margin: 0 auto;
+
+  @include mobile-screen {
+    position: relative;
+  }
+}

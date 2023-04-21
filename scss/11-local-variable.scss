@@ -1,0 +1,18 @@
+//메인컬러,높이,너비
+$메인컬러:#999;
+$높이:150px;
+$너비:1000px;
+
+header{
+    $높이:300px;
+
+    background:$메인컬러;
+    width:$너비;
+    height:$높이;
+
+}
+
+section{
+    height:$높이;
+    background: pink;
+}

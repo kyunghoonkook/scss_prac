@@ -1,0 +1,21 @@
+@import "common";
+$snsArr: (blog, facebook, instagram, tiwiter, youtbe);
+
+.sns {
+  li {
+    float: left;
+    margin: 10px;
+    a {
+      display: block;
+      width: 35px;
+      height: 35px;
+    }
+    @each $i in $snsArr {
+      .#{$i} {
+        a {
+          background-image: url(../images/icon_#{$i}.png);
+        }
+      }
+    }
+  }
+}

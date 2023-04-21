@@ -1,0 +1,23 @@
+//글자색 , 글자크기, 굵기
+//후손 span 밑줄, 기울기
+//:hover 배경
+@mixin text-deco{
+    color: green;
+    font-size: 20px;
+    font-weight: bolder;
+
+    span{
+        text-decoration: underline;
+        font-style: italic;
+    }
+    &:hover{
+        background: pink;
+    }
+}
+
+h1{
+    @include text-deco();
+}
+div{
+    @include text-deco();
+}
